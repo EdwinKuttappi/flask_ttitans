@@ -1,27 +1,29 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/project.html" %}
+<div class="container-fluid">
+    <!-- Setting up variables to customize "project" details to be specific to index page -->
+    {% set project = "Jishnu" %}
+    {% set overview = "https://jishnus420.github.io/CSP-tri1/" %}
+    {% set repo = "https://github.com/JishnuS420/CSP-tri1" %}
+    {% set scrumboard = "https://github.com/users/JishnuS420/projects/1/views/1" %}
+    {% set authors = "Jishnu Singiresu" %}
 
-<!-- Setting up variables to customize "project" details to be specific to index page -->
-{% set project = "Jishnu" %}
-{% set overview = "https://jishnus420.github.io/CSP-tri1/" %}
-{% set repo = "https://github.com/JishnuS420/CSP-tri1" %}
-{% set scrumboard = "https://github.com/users/JishnuS420/projects/1/views/1" %}
-{% set authors = "Jishnu Singiresu" %}
+    <!-- Setting up a block replacement to customize background to BIRDS -->
+    {% block background %}
+        <script src="{{ url_for('static', filename='js/p5.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/vanta.topology.min.js') }}"></script>
+        <script>
+            VANTA.TOPOLOGY({
+                el: "body",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            })  
+        </script>
+</div>
 
-<!-- Setting up a block replacement to customize background to BIRDS -->
-{% block background %}
-    <script src="{{ url_for('static', filename='js/p5.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/vanta.topology.min.js') }}"></script>
-    <script>
-        VANTA.TOPOLOGY({
-            el: "body",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00
-        })
-    </script>
 {% endblock %}
