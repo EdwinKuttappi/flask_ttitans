@@ -27,3 +27,5 @@ while(event != "N"):
         continue
 
 print(events_lists)
+
+# Planning to delete this file
