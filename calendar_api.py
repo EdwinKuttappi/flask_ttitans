@@ -28,4 +28,4 @@ while(event != "N"):
 
 print(events_lists)
 
-# Planning to delete this file
+# Planning to delete this file, done in Python 
