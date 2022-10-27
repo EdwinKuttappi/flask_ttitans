@@ -1,6 +1,6 @@
 import requests
 
-url = "https://public-holiday.p.rapidapi.com/2019/US"
+url = "https://public-holiday.p.rapidapi.com/2022/US"
 
 headers = {
 	"X-RapidAPI-Key": "48e23c6bf3msh9a6baf3e68d9a4ep14546ajsn1a39e98c4ad5",
