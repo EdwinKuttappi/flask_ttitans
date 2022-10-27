@@ -29,5 +29,3 @@ while(event != "N"):
 print(events_lists)
 
 # Planning to delete this file
-# This is is the wrong file
-#It needs to be in our group faspage not flask
