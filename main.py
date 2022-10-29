@@ -31,6 +31,10 @@ def plan():
 def calendar():
     return render_template("calendar.html")
 
+@app.route('/agenda/')  # connects /stub/ URL to stub() function
+def agenda():
+    return render_template("agenda.html")
+
 # this runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
