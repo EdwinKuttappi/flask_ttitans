@@ -23,7 +23,7 @@ events_list=[]
 events_list.append({
   "month": "November",
   "day": 11,
-  "title": "11\nAllen's Birthday"
+  "title": "11               Allen's Birthday"
 })
 events_list.append({
   "month": "November",
