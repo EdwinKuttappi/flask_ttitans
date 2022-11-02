@@ -40,6 +40,11 @@ events_list.append({
   "day": 29,
   "title": "29 \n Tri 2 Begins",
 })
+events_list.append({
+  "month": "November",
+  "day": 30,
+  "title": "30 \n December Eve",
+})
 
 @api_bp.route("/events")
 def events():
