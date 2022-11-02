@@ -39,7 +39,7 @@ events_list.append({
   "month": "November",
   "day": 30,
   "title": "30\nday before december",
-  "title": "30\nday before december"
+  "title1": "30\nday before december"
 
 })
 
