@@ -22,8 +22,13 @@ api_bp = Blueprint(
 events_list=[]
 events_list.append({
   "month": "November",
+  "day": 3,
+  "title": "3 \n N@TM!"
+})
+events_list.append({
+  "month": "November",
   "day": 11,
-  "title": "11 \n Allen's Birthday"
+  "title": "11 \n NO SCHOOL"
 })
 events_list.append({
   "month": "November",
@@ -32,13 +37,8 @@ events_list.append({
 })
 events_list.append({
   "month": "November",
-  "day": 27,
-  "title": "27 \n party"
-})
-events_list.append({
-  "month": "November",
-  "day": 30,
-  "title": "30 \n day before",
+  "day": 29,
+  "title": "29 \n Tri 2 Begins",
 })
 
 @api_bp.route("/events")
