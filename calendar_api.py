@@ -23,24 +23,22 @@ events_list=[]
 events_list.append({
   "month": "November",
   "day": 11,
-  "title": "11               Allen's Birthday"
+  "title": "11 \n Allen's Birthday"
 })
 events_list.append({
   "month": "November",
   "day": 24,
-  "title": "24\nThanksgiving"
+  "title": "24 \n Thanksgiving"
 })
 events_list.append({
   "month": "November",
   "day": 27,
-  "title": "27\nparty"
+  "title": "27 \n party"
 })
 events_list.append({
   "month": "November",
   "day": 30,
-  "title": "30\nday before december",
-  "title1": "30\nday before december"
-
+  "title": "30 \n day before december",
 })
 
 @api_bp.route("/events")
