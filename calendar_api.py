@@ -38,7 +38,9 @@ events_list.append({
 events_list.append({
   "month": "November",
   "day": 30,
+  "title": "30\nday before december",
   "title": "30\nday before december"
+
 })
 
 @api_bp.route("/events")
