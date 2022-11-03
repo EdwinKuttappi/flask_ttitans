@@ -87,7 +87,7 @@ def add_event():
     "title": request.json["title"]
   }
   events_list.append(event_dict)
-  return 200
+  return jsonify(event_dict)
 
 
 
