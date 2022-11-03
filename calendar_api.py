@@ -29,6 +29,26 @@ events_list.append({
 events_list.append({
   "id": 1,
   "month": "November",
+  "day": 7,
+  "title": "7 \n Finals Week Starts. Yay!"
+})
+events_list.append({
+  "month": "November",
+  "day": 8,
+  "title": "8 \n Finals Period 5!"
+})
+events_list.append({
+  "month": "November",
+  "day": 9,
+  "title": "9 \n Finals Period 1 and 2!"
+})
+events_list.append({
+  "month": "November",
+  "day": 10,
+  "title": "10 \n Finals Period 3 and 4!"
+})
+events_list.append({
+  "month": "November",
   "day": 11,
   "title": "11 \n NO SCHOOL"
 })
@@ -43,14 +63,14 @@ events_list.append({
   "id": 3,
   "month": "November",
   "day": 29,
-  "title": "29 \n Tri 2 Begins",
+  "title": "29 \n Tri 2 Begins!",
 })
 
 events_list.append({
   "id": 4,
   "month": "November",
   "day": 30,
-  "title": "30 \n December Eve",
+  "title": "30 \n December Eve!",
 })
 
 
