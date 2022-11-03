@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request
 
 api_bp = Blueprint(
     "calendar-api",
@@ -21,34 +21,55 @@ api_bp = Blueprint(
 
 events_list=[]
 events_list.append({
+  "id": 0,
   "month": "November",
   "day": 3,
   "title": "3 \n N@TM!"
 })
 events_list.append({
+  "id": 1,
   "month": "November",
   "day": 11,
   "title": "11 \n NO SCHOOL"
 })
+
 events_list.append({
+  "id": 2,
   "month": "November",
   "day": 24,
   "title": "24 \n Thanksgiving"
 })
 events_list.append({
+  "id": 3,
   "month": "November",
   "day": 29,
   "title": "29 \n Tri 2 Begins",
 })
+
 events_list.append({
+  "id": 4,
   "month": "November",
   "day": 30,
   "title": "30 \n December Eve",
 })
 
-@api_bp.route("/events")
+
+@api_bp.route("/events", methods=["GET"])
 def events():
     return jsonify(events_list)
+
+@api_bp.route("/events/add", methods=["POST"])
+def add_event():
+  event_dict={
+    "id": len(events_list),
+    "month": request.json["month"],
+    "day": request.json["day"],
+    "title": request.json["title"]
+  }
+  events_list.append(event_dict)
+  return 200
+
+
 
 # event = ""
 # while(event != "N"):
