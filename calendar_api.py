@@ -80,11 +80,13 @@ def events():
 
 @api_bp.route("/events/add", methods=["POST"])
 def add_event():
+  data = request.get_data()
+
   event_dict={
     "id": len(events_list),
-    "month": request.json["month"],
-    "day": int(request.json["day"]),
-    "title": request.json["title"]
+    "month": data.json["month"],
+    "day": int(data.json["day"]),
+    "title": data.json["title"]
   }
   events_list.append(event_dict)
   return jsonify(event_dict)
