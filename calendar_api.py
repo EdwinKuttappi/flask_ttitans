@@ -83,7 +83,7 @@ def add_event():
   event_dict={
     "id": len(events_list),
     "month": request.json["month"],
-    "day": request.json["day"],
+    "day": int(request.json["day"]),
     "title": request.json["title"]
   }
   events_list.append(event_dict)
