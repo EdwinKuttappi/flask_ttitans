@@ -28,22 +28,22 @@ events_list.append({
 events_list.append({
   "month": "November",
   "day": 7,
-  "title": "7 \n Finals Week Starts"
+  "title": "7 \n Finals Week Starts. Yay!"
 })
 events_list.append({
   "month": "November",
   "day": 8,
-  "title": "8 \n Finals Period 5"
+  "title": "8 \n Finals Period 5!"
 })
 events_list.append({
   "month": "November",
   "day": 9,
-  "title": "9 \n Finals Period 1 and 2"
+  "title": "9 \n Finals Period 1 and 2!"
 })
 events_list.append({
   "month": "November",
   "day": 10,
-  "title": "10 \n Finals Period 3 and 4"
+  "title": "10 \n Finals Period 3 and 4!"
 })
 events_list.append({
   "month": "November",
