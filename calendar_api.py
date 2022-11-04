@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-
+# setting up a page to see the json events 
 api_bp = Blueprint(
     "calendar-api",
     __name__,
@@ -7,7 +7,7 @@ api_bp = Blueprint(
     static_folder="static",
     static_url_path="static/calendar-api"
 )
-
+# Original idea for the API, but shifted from this made our own
 # url = "https://public-holiday.p.rapidapi.com/2022/US"
 
 # headers = {
@@ -19,6 +19,7 @@ api_bp = Blueprint(
 
 # print(response.text)
 
+# creating a dictionary of pre defined events 
 events_list=[]
 events_list.append({
   "id": 0,
@@ -42,25 +43,26 @@ events_list.append({
 })
 
 
-
+# creating a route for events and added events  
 @api_bp.route("/events", methods=["GET"])
 def events():
     return jsonify(events_list)
 
 @api_bp.route("/events/add", methods=["POST"])
 def add_event():
-
+ # creating a dictionary for a personalized event
   event_dict={
     "id": len(events_list),
     "month": request.form["month"],
     "day": int(request.form["day"]),
-    "title": request.form["title"]
+    "title": str+(request.form["title"])
+    
   }
   events_list.append(event_dict)
   return jsonify(event_dict)
 
 
-
+# First code
 # event = ""
 # while(event != "N"):
 #     dictionary = {}
@@ -77,7 +79,7 @@ def add_event():
 
 # print(events_list)
 
-
+# Creates new event for every time button is clicked in the frontend
 ''' delete after 
 x = 1
 for i in range():
