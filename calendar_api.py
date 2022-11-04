@@ -55,7 +55,7 @@ def add_event():
     "id": len(events_list),
     "month": request.form["month"],
     "day": int(request.form["day"]),
-    "title": str+(request.form["title"])
+    "title": (request.form["title"])
     
   }
   events_list.append(event_dict)
